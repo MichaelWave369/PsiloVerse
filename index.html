@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0d111b">
+<meta name="description" content="PsiloVerse: an open research atlas of psilocybin-producing fungi, evolution and transparent hypotheses.">
+<title>PsiloVerse · Research Atlas</title>
+<link rel="stylesheet" href="./app/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<div class="shell">
+<header class="topbar">
+ <div class="brand"><div class="mark" aria-hidden="true">Ψ</div><div><strong>PsiloVerse</strong><span>Open fungal science atlas · v0.1</span></div></div>
+ <nav aria-label="Main navigation"><a href="#evidence">Evidence</a><a href="#origins">Evolution</a><a href="#hypotheses">Hypotheses</a><a href="./docs/methods.md">Methods</a><a href="https://github.com/MichaelWave369/Cannabiverse">Cannabiverse ↗</a></nav>
+</header>
+<main id="main">
+ <section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+   <div class="eyebrow"><span class="dot"></span> Field notes / Scientific evidence first</div>
+   <h1 id="hero-title">The roots of a <em>different kingdom.</em></h1>
+   <p class="lead">Trace the evolution of psilocybin-producing fungi, explore published gene-cluster research, and keep every interesting hypothesis separate from established evidence.</p>
+   <div class="cta"><a class="button primary" href="#evidence">Explore source receipts →</a><a class="button" href="#hypotheses">Open the Eden notebook</a></div>
+   <p class="boundary">FUNGI ≠ PLANTS · GENE PRESENCE ≠ COMPOUND DETECTION · SIMULATION ≠ HISTORY</p>
+  </div>
+  <div class="organism" aria-label="Conceptual branching fungal illustration, not a phylogeny">
+   <svg viewBox="0 0 440 430" role="img" aria-labelledby="mycelium-title" xmlns="http://www.w3.org/2000/svg">
+    <title id="mycelium-title">An abstract network with three mushrooms</title>
+    <defs><radialGradient id="glow"><stop stop-color="#63e5c7" stop-opacity=".42"/><stop offset="1" stop-color="#63e5c7" stop-opacity="0"/></radialGradient></defs>
+    <circle cx="218" cy="205" r="194" fill="url(#glow)"/>
+    <g fill="none" stroke="#75d6be" opacity=".54" stroke-width="1.5">
+     <path d="M214 318 Q205 284 184 265 T140 228 Q114 210 95 211 M214 318 Q233 269 271 242 Q309 217 341 196 M215 316 Q165 331 146 357 Q119 374 80 367 M214 318 Q266 325 294 357 Q318 380 365 370 M195 283 Q163 295 119 283 M255 251 Q287 260 311 254 M177 268 Q159 249 153 222 M238 289 Q251 281 262 272"/>
+     <path d="M95 211 Q82 201 70 178 M95 211 Q63 218 48 241 M341 196 Q359 183 369 157 M341 196 Q363 204 389 205 M80 367 Q58 360 45 347 M365 370 Q391 352 407 342"/>
+    </g>
+    <g fill="#95f6d8"><circle cx="95" cy="211" r="4"/><circle cx="341" cy="196" r="4"/><circle cx="214" cy="318" r="5"/><circle cx="80" cy="367" r="3"/><circle cx="365" cy="370" r="3"/></g>
+    <g stroke="#c5e9ce" stroke-linejoin="round" stroke-width="3">
+      <path d="M170 178 Q173 236 180 279 L204 279 Q196 230 201 178Z" fill="#a9ddc6"/>
+      <path d="M132 176 Q178 122 227 172 Q231 182 218 191 Q174 208 135 191 Q126 185 132 176Z" fill="#9f79df"/>
+      <path d="M271 151 Q265 201 275 240 L292 240 Q289 189 296 151Z" fill="#bedfca"/>
+      <path d="M245 150 Q284 108 321 149 Q321 159 307 164 Q266 174 248 161 Q243 158 245 150Z" fill="#d0a7f1"/>
+      <path d="M96 233 Q100 262 107 296 L124 296 Q117 270 121 233Z" fill="#a9ddc6"/>
+      <path d="M74 233 Q108 200 141 231 Q144 240 133 246 Q111 258 84 247 Q77 243 74 233Z" fill="#ceafee"/>
+    </g>
+    <g fill="#ddebe3" font-size="10" font-family="ui-monospace,monospace"><text x="264" y="82">DIVERSITY</text><text x="43" y="321">COMMON ANCESTRY</text></g>
+   </svg>
+   <span class="illustration-label">Conceptual illustration · Not a phylogenetic tree</span>
+  </div>
+ </section>
+ <section class="metrics" aria-label="Research dataset summary">
+  <div><strong id="metric-claims">9</strong><span>Evidence claims</span></div>
+  <div><strong id="metric-sources">3</strong><span>Primary sources</span></div>
+  <div><strong id="metric-hyp">3</strong><span>Tracked hypotheses</span></div>
+  <div><strong>0</strong><span>Unverified promotions</span></div>
+ </section>
+ <section id="evidence" class="section" aria-labelledby="evidence-title">
+  <div class="section-head"><div><p class="eyebrow">01 / Evidence explorer</p><h2 id="evidence-title">Claims with receipts.</h2><p>Filter by research lane or search for gene clusters, ancestry, and experimental findings. Each claim links to its research source.</p></div><button id="export" class="button" type="button" disabled>Export evidence JSON ↓</button></div>
+  <div class="filters"><label class="search"><span>Search evidence</span><input id="search" placeholder="e.g. gene cluster, 67 million, transfer" aria-label="Search evidence" type="search"></label><label class="select"><span>Evidence lane</span><select id="lane"><option value="all">All research lanes</option><option value="evolution">Evolution</option><option value="biochemistry">Biochemistry</option><option value="taxonomy">Taxonomy</option><option value="methods">Methods</option></select></label></div>
+  <div id="claims" class="claims" aria-live="polite"><p>Loading scientific data…</p></div>
+ </section>
+ <section id="origins" class="section" aria-labelledby="origins-title">
+  <p class="eyebrow">02 / Evolution, not mythology</p><h2 id="origins-title">How genes travel.</h2>
+  <p class="section-lead">Phylogenetic studies point to inheritance and possible horizontal gene transfer. These explanations teach the distinction, not the exact historical routes.</p>
+  <div class="origin-grid">
+   <article class="topic"><div class="topic-icon">↧</div><h3>Vertical inheritance</h3><p>Parent fungal lineages pass genetic material to descendants. Some branches preserve a biosynthetic gene cluster; others may differ.</p></article>
+   <article class="topic"><div class="topic-icon">⇢</div><h3>Horizontal gene transfer</h3><p>Genetic material may transfer between lineages outside ordinary descent. Scientific studies infer such transfers for psilocybin-related genes.</p></article>
+   <article class="topic"><div class="topic-icon">◌</div><h3>What remains unknown</h3><p>No exact ancient individual organism or complete sequence of events has been directly observed. Evolutionary inference comes with uncertainty.</p></article>
+  </div>
+  <div class="timeline">
+   <div class="timeline-item"><span class="date">~67 MYA</span><div><strong>Estimated early <i>Psilocybe</i> lineage</strong><p>Molecular-clock estimate from 2024, not an ancient specimen.</p></div><a href="https://doi.org/10.1073/pnas.2311245121" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+   <div class="timeline-item"><span class="date">2017</span><div><strong>Four biosynthetic enzymes characterized</strong><p>Work on PsiD, PsiH, PsiK and PsiM.</p></div><a href="https://doi.org/10.1002/anie.201705489" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+   <div class="timeline-item"><span class="date">2024–25</span><div><strong>Evolutionary hypotheses expanded</strong><p>Studies discuss different gene-cluster arrangements and possible transfers.</p></div><a href="https://doi.org/10.5943/mycosphere/16/1/28" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+  </div>
+ </section>
+ <section id="hypotheses" class="section" aria-labelledby="hyp-title"><p class="eyebrow">03 / The speculation notebook</p><h2 id="hyp-title">Ask bigger questions.<br>Keep the labels honest.</h2><p class="section-lead">Our Garden of Eden discussion belongs here, in a separate hypothesis lane. A compelling resemblance is not a historical demonstration.</p><div id="hypotheses-list" class="hypotheses"><p>Loading hypothesis notebook…</p></div></section>
+ <section class="endnote"><span class="endmark">Ψ</span><div><h3>Open research, not open-ended claims.</h3><p>Educational only. Not mushroom identification guidance, cultivation instructions, substance preparation, dosing advice, a medical recommendation, or evidence that Eden's trees referred to psychoactive organisms.</p></div><a class="button" href="./docs/methods.md">Read scientific boundaries →</a></section>
+</main>
+<footer><span>PsiloVerse · Open research · Sources retain their copyrights</span><span>Evidence first. Wonder always.</span></footer>
+</div>
+<script type="module" src="./app/main.mjs"></script>
+</body>
+</html>
