@@ -1,0 +1,164 @@
+{
+  "project": "PsiloVerse",
+  "version": "0.1.0",
+  "generated": "2026-11-16",
+  "authority": "SOURCE_BOUNDED_ATLAS_NOT_EXPERIMENT",
+  "doctrine": "IDENTITY ≠ OCCURRENCE ≠ GENETIC_CAPACITY ≠ EXPRESSION ≠ METABOLITE_DETECTION ≠ HUMAN_EFFECT ≠ SAFETY",
+  "sources": [
+    {
+      "id": "S-PNAS-2024",
+      "year": 2024,
+      "authors": "Bradshaw et al.",
+      "title": "Phylogenomics of the psychoactive mushroom genus Psilocybe and evolution of the psilocybin biosynthetic gene cluster",
+      "doi": "10.1073/pnas.2311245121",
+      "url": "https://doi.org/10.1073/pnas.2311245121",
+      "journal": "PNAS"
+    },
+    {
+      "id": "S-FRICKE-2017",
+      "year": 2017,
+      "authors": "Fricke, Blei & Hoffmeister",
+      "title": "Enzymatic Synthesis of Psilocybin",
+      "doi": "10.1002/anie.201705489",
+      "url": "https://doi.org/10.1002/anie.201705489",
+      "journal": "Angewandte Chemie"
+    },
+    {
+      "id": "S-LIU-2025",
+      "year": 2025,
+      "authors": "Liu et al.",
+      "title": "Evolution and horizontal transfer of the psilocybin biosynthetic gene cluster drive the diversification of magic mushrooms",
+      "doi": "10.5943/mycosphere/16/1/28",
+      "url": "https://doi.org/10.5943/mycosphere/16/1/28",
+      "journal": "Mycosphere"
+    }
+  ],
+  "claims": [
+    {
+      "id": "PVE-001",
+      "title": "The Psilocybe stem lineage is estimated near 67 million years old",
+      "lane": "evolution",
+      "status": "PHYLOGENOMIC_INFERENCE",
+      "summary": "The 2024 analysis dates an early Psilocybe lineage using evolutionary models rather than directly recovered ancient specimens.",
+      "limits": "Estimated lineage timing is model-dependent. It cannot establish prehistoric human use or an original individual organism.",
+      "sources": [
+        "S-PNAS-2024"
+      ]
+    },
+    {
+      "id": "PVE-002",
+      "title": "71 fungarium metagenomes were analyzed",
+      "lane": "methods",
+      "status": "PUBLISHED_STUDY_METHOD",
+      "summary": "Bradshaw and colleagues analyzed 71 fungarium metagenomes, including 23 type specimens, and 2,983 single-copy gene families.",
+      "limits": "Sampled genomes do not represent every historical or extant species.",
+      "sources": [
+        "S-PNAS-2024"
+      ]
+    },
+    {
+      "id": "PVE-003",
+      "title": "Different gene-cluster orders occur across sampled lineages",
+      "lane": "evolution",
+      "status": "GENOMIC_INFERENCE",
+      "summary": "The 2024 study describes two distinct organizational patterns for psilocybin biosynthesis-related gene clusters.",
+      "limits": "Gene order does not establish alkaloid abundance or individual specimen chemistry.",
+      "sources": [
+        "S-PNAS-2024"
+      ]
+    },
+    {
+      "id": "PVE-004",
+      "title": "Possible horizontal transfer in fungal evolution",
+      "lane": "evolution",
+      "status": "EVOLUTIONARY_HYPOTHESIS",
+      "summary": "Comparative phylogenomic relationships are consistent with past horizontal transfers of psilocybin-related genes into other fungal groups.",
+      "limits": "The transfers are inferred, not directly observed ancient events; routes depend on sampling and model assumptions.",
+      "sources": [
+        "S-PNAS-2024"
+      ]
+    },
+    {
+      "id": "PVE-005",
+      "title": "Four core biosynthetic enzymes characterized",
+      "lane": "biochemistry",
+      "status": "PUBLISHED_EXPERIMENT",
+      "summary": "Research characterized PsiD, PsiH, PsiK, and PsiM in the biosynthetic context of psilocybin.",
+      "limits": "An enzyme pathway does not predict concentrations, effects, or safety for unstudied specimens.",
+      "sources": [
+        "S-FRICKE-2017"
+      ]
+    },
+    {
+      "id": "PVE-006",
+      "title": "A 2025 study inferred four horizontal transfer events",
+      "lane": "evolution",
+      "status": "GENOMIC_INFERENCE",
+      "summary": "A comparative study reported four inferred transfers and three psilocybin biosynthetic gene-cluster configurations.",
+      "limits": "Reported events are a study-specific reconstruction, not a settled chronology or observed transfers.",
+      "sources": [
+        "S-LIU-2025"
+      ]
+    },
+    {
+      "id": "PVE-007",
+      "title": "Native fungal homologs may figure in gene-cluster origin",
+      "lane": "evolution",
+      "status": "GENOMIC_HYPOTHESIS",
+      "summary": "The 2025 study proposed a possible origin involving gene duplication and rearrangement among fungal genes.",
+      "limits": "No exact extinct ancestral fungal genome has been recovered from this inference.",
+      "sources": [
+        "S-LIU-2025"
+      ]
+    },
+    {
+      "id": "PVE-008",
+      "title": "Related clusters occur beyond the genus Psilocybe",
+      "lane": "taxonomy",
+      "status": "GENOMIC_INFERENCE",
+      "summary": "Studies discuss psilocybin-associated clusters in other fungal genera, including Panaeolus, Gymnopilus, Pluteus, and Pholiotina.",
+      "limits": "This does not mean every member of any genus contains psilocybin or can be reliably identified by appearance.",
+      "sources": [
+        "S-PNAS-2024"
+      ]
+    },
+    {
+      "id": "PVE-009",
+      "title": "Gene presence is not chemical detection",
+      "lane": "methods",
+      "status": "METHOD_BOUNDARY",
+      "summary": "Predicted biosynthetic capacity must be distinguished from verified expression and measured metabolite occurrence.",
+      "limits": "A predicted cluster by itself cannot establish psilocybin content, effects, or safety.",
+      "sources": [
+        "S-FRICKE-2017",
+        "S-LIU-2025"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "HYP-EDEN-01",
+      "title": "Tree of Knowledge as a psilocybin symbol",
+      "status": "SPECULATIVE_NO_DIRECT_EVIDENCE",
+      "question": "Could the Eden story preserve cultural memories of psychoactive fungi?",
+      "needed": "Securely contextualized texts or archaeological residues connecting the Eden motif specifically with these fungi.",
+      "alternative": "The narrative may concern wisdom, disobedience, morality, and mortality without encoding a botanical species."
+    },
+    {
+      "id": "HYP-EDEN-02",
+      "title": "One recent ancestor for cannabis and psilocybin fungi",
+      "status": "CONTRADICTED_AS_RECENT_SHARED_SPECIES",
+      "question": "Could cannabis and psilocybin fungi have recently been one plant?",
+      "needed": "A biologically compatible ancestry and authentic genomic evidence; plants and fungi instead diverged very deep in eukaryotic evolution.",
+      "alternative": "The two biblical trees can function as symbols without representing two related organisms."
+    },
+    {
+      "id": "HYP-ANCESTOR-01",
+      "title": "Reconstructing ancient psilocybin-producing fungal ancestors",
+      "status": "PLAUSIBLE_GENERAL_EVOLUTION_UNQUANTIFIED",
+      "question": "How much about past fungi can modern phylogenomics recover?",
+      "needed": "Authenticated ancient fungal DNA, wide genomic sampling, calibrations, and uncertainty estimates.",
+      "alternative": "Existing trees infer possible ancestral states but cannot reconstruct a specific extinct specimen with certainty."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "psiloverse",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "description": "Source-bounded research atlas for psilocybin-producing fungi",
+  "scripts": {
+    "test": "node scripts/validate.mjs"
+  }
+}
